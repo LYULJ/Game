@@ -1,4 +1,5 @@
-![alt text]( https://user-images.githubusercontent.com/31905713/62812961-de2c0680-bacd-11e9-943a-0e5c45ddf33b.png"Logo Title Text 1")
+![alt text](https://user-images.githubusercontent.com/31905713/62812961-de2c0680-bacd-11e9-943a-0e5c45ddf33b.png "Logo Title Text 1")
+
 # Run pipeline in database API 
 ## Guideline
 This document provides guideline and examples for interact with database when running pipeline. This API is an interface to help running and storage of the results of pipeline to postgre.
