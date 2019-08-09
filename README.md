@@ -23,7 +23,7 @@ java -Xmx3g -cp target/petsure-nlp-db-1.0.0.20200701-jar-with-dependencies.jar c
   -c com.microsoft.sqlserver.jdbc.SQLServerDriver -i C:\Users\Administrator\Desktop\input\notes_table_20190728.txt  -p C:\Users\Administrator\Desktop\petsure-nlp-db\pipeline\petsure.pipeline.jar -I C:\Users\Administrator\Desktop\petsure-nlp-db\concept_mapping\petsure_umls_index -o C:\Users\Administrator\Desktop\output
     
   # Useful Command Line Options
-  <input type="text" id="name" name="name"/>
+  # <input type="text" id="name" name="name"/>
   
   
   
