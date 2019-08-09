@@ -8,7 +8,7 @@ Postgre
 # Usage
 pass the pipeline jar file path(-p option), UMLS index mapping file path(-I option), thread number(optional), input source(-i option) in the form of text file, folder path or JDBC configuration(-c option) and database table, output target(-o option) in the form of folder path or database table.
 
-# Example
+# Examples
 The following command will run the petsure.pipeline pipeline on NOTE_TEXT,ID,notes_table_20190728 table in PetsureHistoricalData database and store the entity table named ENT_OUT_notes_20190728 and the relation table named REL_OUT_notes_20190728 in PetsureHistoricalData table in database. The query statement inplement on this table is "select ID,NOTE_TEXT from notes_table_20190728 where ID > 999991". The specified UMLS index file is petsure_umls_index.
 
 java -Xmx3g -cp target/petsure-nlp-db-1.0.0.20200701-jar-with-dependencies.jar com.melax.contract.petsure.RunPipelineMain
@@ -22,13 +22,36 @@ The following command will run the petsure.pipeline pipeline on data in notes_ta
 java -Xmx3g -cp target/petsure-nlp-db-1.0.0.20200701-jar-with-dependencies.jar com.melax.contract.petsure.RunPipelineMain
   -c com.microsoft.sqlserver.jdbc.SQLServerDriver -i C:\Users\Administrator\Desktop\input\notes_table_20190728.txt  -p C:\Users\Administrator\Desktop\petsure-nlp-db\pipeline\petsure.pipeline.jar -I C:\Users\Administrator\Desktop\petsure-nlp-db\concept_mapping\petsure_umls_index -o C:\Users\Administrator\Desktop\output
     
-  # Useful Command Line Options
- | Option        | Description           | 
+  # Command Line Options
+# General
+| Option        | Description           | 
 | ------------- |:-------------:|
-| p      | Path of the pipelineJar jar file | 
-| col 2 is      | centered      |  
-| zebra stripes | are neat      |   
-  
-  
+| -p            | Path of the pipeline jar file | 
+| -l            | License path and filename      |  
+| -i            | Directory path of the input file or folder  |   
+| -o            | Directory path of the output file folder|
+| -U            | UMLS username|
+| -P            |UMLS password|
+| -I            |Directory path of the umls index folder|
+
+# for JDBC configuration 
+| Option        | Description           | 
+| ------------- |:-------------:|
+| -c            | JDBC Driver class name | 
+| -du            | Database username      |  
+| -dp            | Database password  |   
+| -dst           | Source database tablename|
+| -dsi            | Source database table, ID fieldname|
+| -dsx            |Source database table, TEXT fieldname|
+| -dsd            |Source database table, text date fieldname|
+| -dtt            |Target tablename|
+|-dte             |Target tablename for named entity|
+|-dtr             |Target tablename for relation      |
+|-s               |SQL statement to retrieve text file|
+
+# Optional
+|Option|Description|
+|-t|Number of threads to run|
+|-h| Print help for this application|
   
 
