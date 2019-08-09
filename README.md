@@ -51,6 +51,7 @@ java -Xmx3g -cp target/petsure-nlp-db-1.0.0.20200701-jar-with-dependencies.jar c
 
 ### Optional
 |Option|Description|
+| ------------- |:-------------:|
 |-t|Number of threads to run|
 |-h| Print help for this application|
   
