@@ -23,11 +23,11 @@ java -Xmx3g -cp target/petsure-nlp-db-1.0.0.20200701-jar-with-dependencies.jar c
   -c com.microsoft.sqlserver.jdbc.SQLServerDriver -i C:\Users\Administrator\Desktop\input\notes_table_20190728.txt  -p C:\Users\Administrator\Desktop\petsure-nlp-db\pipeline\petsure.pipeline.jar -I C:\Users\Administrator\Desktop\petsure-nlp-db\concept_mapping\petsure_umls_index -o C:\Users\Administrator\Desktop\output
     
   # Useful Command Line Options
- | Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+ | Option        | Description           | 
+| ------------- |:-------------:|
+| p      | Path of the pipelineJar jar file | 
+| col 2 is      | centered      |  
+| zebra stripes | are neat      |   
   
   
   
