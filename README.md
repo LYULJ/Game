@@ -1,6 +1,7 @@
 # Run pipeline in database API 
 
-
+Inline-style: 
+![alt text]( "Logo Title Text 1")
 ## Guideline
 This document provides guideline and examples for interact with database when running pipeline. This API is an interface to help running and storage of the results of pipeline to postgre.
 ## Prerequisisite
